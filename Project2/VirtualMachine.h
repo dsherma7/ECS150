@@ -39,9 +39,9 @@ typedef unsigned int TVMThreadState, *TVMThreadStateRef;
 typedef void (*TVMMainEntry)(int, char*[]);
 typedef void (*TVMThreadEntry)(void *);
 
-TVMStatus VMStart(int tickms, int argc, char *argv[]);
+TVMStatus VMStart(int tickms, int argc, char *argv[]); //Machine Init, VM Load Module, Call function, Machine Terminate, return
 
-TVMStatus VMTickMS(int *tickmsref);
+TVMStatus VMTickMS(int *tickmsref); 
 TVMStatus VMTickCount(TVMTickRef tickref);
 
 TVMStatus VMThreadCreate(TVMThreadEntry entry, void *param, TVMMemorySize memsize, TVMThreadPriority prio, TVMThreadIDRef tid);
