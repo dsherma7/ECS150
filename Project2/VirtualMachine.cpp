@@ -10,5 +10,16 @@ extern "c"{     //Allow for backwards compabitlity with name mangling
 //Load Module (App) (ptr VMLoadModule(module.so))
 //Call ptr
 
+//Get Hello working
+//Need to get VMFileWrite done first
+
+//Then Impliment Sleep
+//Requires Timer and MachineRequestAlarm
+//while(sleepcount)
+//volatile int sleepcount
+
+
+
+//Note: Don't Make Vector<TCB> use Vector<TCB*>
 
 }
